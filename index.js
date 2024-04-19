@@ -3,7 +3,7 @@ import axios from "axios";
 import bodyParser from "body-parser";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const API_URL = "https://api.breakingbadquotes.xyz/v1/quotes";
 var pugSounds = ["*snort*", "*grunt*", "*cough*", "(side eye)", "*sigh*", "(head tilt)", "(scratches ear loudly)", "(long slow snore)", "woof!", "*yawn*", "(emits hacking cough)", "(flaps ears)", "(barks at doorbell)", "*sharp exhale*"];
@@ -60,7 +60,4 @@ app.get("/", (req, res) => {
         res.status(500);
     }});
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
