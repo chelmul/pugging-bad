@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(244, 250, 244);
+}
+
+.container {
+    max-width: 75%;
+}
+
+.btn-primary:hover {
+    background-color: #090a08;
+    border-color: #090a08;
+    color: white;
+}
+
+.btn-primary {
+    border-color: #44573a;
+    background-color: #44573a;
+    color: white;
+}
+
+.pug-profile-pic {
+    max-height: 150px;
+}
+
+.human-profile-pic {
+    max-height: 150px;
+}
